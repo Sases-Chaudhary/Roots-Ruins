@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://blnar8needyo"]
+
+[ext_resource type="Texture2D" uid="uid://bvrc6lda77r2t" path="res://assets/game/outdoor_decoration/decor_mines_out.png" id="1_bcctm"]
+[ext_resource type="PackedScene" uid="uid://od0nynstc6ab" path="res://scenes/components/collectable_component.tscn" id="2_e2a05"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcctm"]
+atlas = ExtResource("1_bcctm")
+region = Rect2(0, 112, 32, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e2a05"]
+radius = 8.0
+
+[node name="Log" type="Sprite2D"]
+scale = Vector2(0.75, 0.8125)
+texture = SubResource("AtlasTexture_bcctm")
+
+[node name="CollectableComponent" parent="." instance=ExtResource("2_e2a05")]
+collectable_name = "log"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
+position = Vector2(0, 1.14286)
+shape = SubResource("CircleShape2D_e2a05")

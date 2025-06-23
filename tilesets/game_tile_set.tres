@@ -1,8 +1,11 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://dtkeowdms5vvw"]
+[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://dtkeowdms5vvw"]
 
 [ext_resource type="Texture2D" uid="uid://c5vsto0vjwauo" path="res://assets/game/tiles/water.png" id="1_tjtrf"]
 [ext_resource type="Texture2D" uid="uid://30xwprwsj4wy" path="res://assets/game/tiles/grass.png" id="2_tkbyn"]
 [ext_resource type="Texture2D" uid="uid://bx5g8a7dotgri" path="res://assets/game/tiles/Tilled_Dirt_Wide.png" id="3_v1amf"]
+[ext_resource type="PackedScene" uid="uid://bo3hxblp0gm6v" path="res://scenes/objects/trees/small_tree.tscn" id="4_7cqdy"]
+[ext_resource type="PackedScene" uid="uid://bphrhmmm4dgu5" path="res://scenes/objects/trees/large_tree.tscn" id="5_pudl8"]
+[ext_resource type="PackedScene" uid="uid://c2rj47pgr6t7e" path="res://scenes/objects/rocks/rock.tscn" id="6_uk42g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkbyn"]
 texture = ExtResource("1_tjtrf")
@@ -777,6 +780,11 @@ texture = ExtResource("3_v1amf")
 9:5/0/terrains_peering_bit/top_side = 1
 9:5/0/terrains_peering_bit/top_right_corner = 1
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_pudl8"]
+scenes/1/scene = ExtResource("4_7cqdy")
+scenes/2/scene = ExtResource("5_pudl8")
+scenes/3/scene = ExtResource("6_uk42g")
+
 [resource]
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "grass_tiles"
@@ -786,3 +794,4 @@ terrain_set_0/terrain_1/color = Color(0.777133, 0.0872381, 0.470202, 1)
 sources/0 = SubResource("TileSetAtlasSource_tkbyn")
 sources/1 = SubResource("TileSetAtlasSource_v1amf")
 sources/2 = SubResource("TileSetAtlasSource_7cqdy")
+sources/4 = SubResource("TileSetScenesCollectionSource_pudl8")

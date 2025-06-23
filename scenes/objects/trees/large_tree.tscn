@@ -1,0 +1,47 @@
+[gd_scene load_steps=10 format=3 uid="uid://bphrhmmm4dgu5"]
+
+[ext_resource type="Shader" uid="uid://dfeosyd05rrp0" path="res://scenes/objects/trees/tree_shake.gdshader" id="1_f4wgc"]
+[ext_resource type="Texture2D" uid="uid://dv8jo38knqhkg" path="res://assets/game/outdoor_decoration/oak_tree.png" id="1_ivetc"]
+[ext_resource type="Script" uid="uid://c204ig55id6pb" path="res://scenes/objects/trees/large_tree.gd" id="2_f4wgc"]
+[ext_resource type="PackedScene" uid="uid://7iqq18w8duyq" path="res://scenes/components/hurt_component.tscn" id="2_wjqkr"]
+[ext_resource type="PackedScene" uid="uid://blrhg7mo12goc" path="res://scenes/components/damage_component.tscn" id="3_f4wgc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6vpey"]
+resource_local_to_scene = true
+shader = ExtResource("1_f4wgc")
+shader_parameter/shake_intensity = 0.0
+shader_parameter/shake_speed = 20.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vpey"]
+atlas = ExtResource("1_ivetc")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0ia52"]
+radius = 8.94427
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_you1t"]
+size = Vector2(25, 46)
+
+[node name="LargeTree" type="Sprite2D"]
+material = SubResource("ShaderMaterial_6vpey")
+position = Vector2(0, -17)
+scale = Vector2(0.847656, 0.784375)
+texture = SubResource("AtlasTexture_6vpey")
+script = ExtResource("2_f4wgc")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 14)
+shape = SubResource("CircleShape2D_0ia52")
+debug_color = Color(0, 0.638895, 0.372362, 0.42)
+
+[node name="HurtComponent" parent="." instance=ExtResource("2_wjqkr")]
+tool = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_you1t")
+debug_color = Color(0.915305, 0.129449, 0.636974, 0.42)
+
+[node name="DamageComponent" parent="." instance=ExtResource("3_f4wgc")]
+max_damage = 5
