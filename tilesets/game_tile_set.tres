@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=11 format=3 uid="uid://dtkeowdms5vvw"]
+[gd_resource type="TileSet" load_steps=15 format=3 uid="uid://dtkeowdms5vvw"]
 
 [ext_resource type="Texture2D" uid="uid://c5vsto0vjwauo" path="res://assets/game/tiles/water.png" id="1_tjtrf"]
 [ext_resource type="Texture2D" uid="uid://30xwprwsj4wy" path="res://assets/game/tiles/grass.png" id="2_tkbyn"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://bo3hxblp0gm6v" path="res://scenes/objects/trees/small_tree.tscn" id="4_7cqdy"]
 [ext_resource type="PackedScene" uid="uid://bphrhmmm4dgu5" path="res://scenes/objects/trees/large_tree.tscn" id="5_pudl8"]
 [ext_resource type="PackedScene" uid="uid://c2rj47pgr6t7e" path="res://scenes/objects/rocks/rock.tscn" id="6_uk42g"]
+[ext_resource type="Texture2D" uid="uid://bvrc6lda77r2t" path="res://assets/game/outdoor_decoration/decor_mines_out.png" id="7_8yb5x"]
+[ext_resource type="Texture2D" uid="uid://cm0se3eajr3js" path="res://assets/game/outdoor_decoration/basic_grass.png" id="8_xa2g7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkbyn"]
 texture = ExtResource("1_tjtrf")
@@ -785,6 +787,116 @@ scenes/1/scene = ExtResource("4_7cqdy")
 scenes/2/scene = ExtResource("5_pudl8")
 scenes/3/scene = ExtResource("6_uk42g")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jutaf"]
+texture = ExtResource("7_8yb5x")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+6:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+4:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+4:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8u0cr"]
+texture = ExtResource("8_xa2g7")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+
 [resource]
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "grass_tiles"
@@ -795,3 +907,5 @@ sources/0 = SubResource("TileSetAtlasSource_tkbyn")
 sources/1 = SubResource("TileSetAtlasSource_v1amf")
 sources/2 = SubResource("TileSetAtlasSource_7cqdy")
 sources/4 = SubResource("TileSetScenesCollectionSource_pudl8")
+sources/5 = SubResource("TileSetAtlasSource_jutaf")
+sources/6 = SubResource("TileSetAtlasSource_8u0cr")
