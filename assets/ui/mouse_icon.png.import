@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://min7muq1ekxn"
-path="res://.godot/imported/wood_bridge.png-dafffa272412225a806da93e457873f5.ctex"
+uid="uid://d3chbquips18s"
+path="res://.godot/imported/mouse_icon.png-67f27c0f39c79c6579b122cae0d75b42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/game/outdoor_decoration/wood_bridge.png"
-dest_files=["res://.godot/imported/wood_bridge.png-dafffa272412225a806da93e457873f5.ctex"]
+source_file="res://assets/ui/mouse_icon.png"
+dest_files=["res://.godot/imported/mouse_icon.png-67f27c0f39c79c6579b122cae0d75b42.ctex"]
 
 [params]
 
