@@ -1,13 +1,11 @@
-[gd_resource type="TileSet" load_steps=17 format=3 uid="uid://dtkeowdms5vvw"]
+[gd_resource type="TileSet" load_steps=15 format=3 uid="uid://dtkeowdms5vvw"]
 
 [ext_resource type="Texture2D" uid="uid://c5vsto0vjwauo" path="res://assets/game/tiles/water.png" id="1_tjtrf"]
 [ext_resource type="Texture2D" uid="uid://30xwprwsj4wy" path="res://assets/game/tiles/grass.png" id="2_tkbyn"]
-[ext_resource type="Texture2D" uid="uid://bx5g8a7dotgri" path="res://assets/game/tiles/Tilled_Dirt_Wide.png" id="3_v1amf"]
 [ext_resource type="PackedScene" uid="uid://bo3hxblp0gm6v" path="res://scenes/objects/trees/small_tree.tscn" id="4_7cqdy"]
 [ext_resource type="PackedScene" uid="uid://bphrhmmm4dgu5" path="res://scenes/objects/trees/large_tree.tscn" id="5_pudl8"]
 [ext_resource type="PackedScene" uid="uid://c2rj47pgr6t7e" path="res://scenes/objects/rocks/rock.tscn" id="6_uk42g"]
 [ext_resource type="Texture2D" uid="uid://bvrc6lda77r2t" path="res://assets/game/outdoor_decoration/decor_mines_out.png" id="7_8yb5x"]
-[ext_resource type="Texture2D" uid="uid://cm0se3eajr3js" path="res://assets/game/outdoor_decoration/basic_grass.png" id="8_xa2g7"]
 [ext_resource type="Texture2D" uid="uid://vl7iugv0ci8p" path="res://assets/game/outdoor_decoration/fences.png" id="9_xa2g7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkbyn"]
@@ -409,7 +407,6 @@ texture = ExtResource("2_tkbyn")
 3:2/0/terrains_peering_bit/top_side = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cqdy"]
-texture = ExtResource("3_v1amf")
 0:0/0 = 0
 0:0/0/terrain_set = 0
 0:0/0/terrain = 1
@@ -851,7 +848,6 @@ texture = ExtResource("7_8yb5x")
 3:11/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8u0cr"]
-texture = ExtResource("8_xa2g7")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
