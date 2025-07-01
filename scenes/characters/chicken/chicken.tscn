@@ -51,6 +51,7 @@ animations = [{
 radius = 4.0
 
 [node name="Chicken" type="CharacterBody2D"]
+collision_layer = 64
 script = ExtResource("1_r6a33")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -65,6 +66,7 @@ position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_31inw")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_postprocessing = 1
 avoidance_enabled = true
 radius = 5.0
 
