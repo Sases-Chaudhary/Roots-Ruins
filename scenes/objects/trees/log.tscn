@@ -11,6 +11,7 @@ region = Rect2(0, 112, 32, 16)
 radius = 8.0
 
 [node name="Log" type="Sprite2D"]
+y_sort_enabled = true
 scale = Vector2(0.75, 0.8125)
 texture = SubResource("AtlasTexture_bcctm")
 

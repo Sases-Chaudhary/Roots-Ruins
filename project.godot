@@ -16,6 +16,7 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 [autoload]
 
 ToolManager="*res://scripts/globals/tool_manager.gd"
+InventorySimple="*res://scripts/globals/invenotry_simple.gd"
 
 [display]
 
