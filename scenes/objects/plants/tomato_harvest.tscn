@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_5iwbf"]
 radius = 6.08276
 
-[node name="Tomato" type="Sprite2D"]
+[node name="TomatoHarvest" type="Sprite2D"]
 y_sort_enabled = true
 texture = ExtResource("1_n1ylb")
 hframes = 6

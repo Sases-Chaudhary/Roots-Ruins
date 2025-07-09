@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://blnar8needyo" path="res://scenes/objects/trees/log.tscn" id="3_0jjdr"]
 [ext_resource type="PackedScene" uid="uid://dpsyxj2tr0c6h" path="res://scenes/objects/milk.tscn" id="3_h30rg"]
 [ext_resource type="PackedScene" uid="uid://cujq6lm055mw0" path="res://scenes/objects/egg.tscn" id="5_h30rg"]
-[ext_resource type="PackedScene" uid="uid://bdupeej1gvi1y" path="res://scenes/objects/tomato.tscn" id="7_pkvns"]
-[ext_resource type="PackedScene" uid="uid://bb3d7gwxf6pyx" path="res://scenes/objects/corn.tscn" id="8_33f7h"]
+[ext_resource type="PackedScene" uid="uid://bdupeej1gvi1y" path="res://scenes/objects/plants/tomato_harvest.tscn" id="7_pkvns"]
+[ext_resource type="PackedScene" uid="uid://bb3d7gwxf6pyx" path="res://scenes/objects/plants/corn_harvest.tscn" id="8_33f7h"]
 
 [node name="TestSceneTilemap" type="Node2D"]
 y_sort_enabled = true
@@ -45,5 +45,4 @@ position = Vector2(367, 112)
 position = Vector2(455, 106)
 
 [node name="Corn" parent="." instance=ExtResource("8_33f7h")]
-y_sort_enabled = true
 position = Vector2(205, 105)

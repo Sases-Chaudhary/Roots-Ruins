@@ -3,9 +3,9 @@ extends Control
 @onready var time_label: Label = $TimePannel/MarginContainer/TimeLabel
 @onready var day_label: Label = $DayPannel/MarginContainer/DayLabel
 
-@export var normal_speed: int = 2
-@export var fast_speed: int = 10
-@export var cheetah_speed: int = 30
+@export var normal_speed: int = 10
+@export var fast_speed: int = 50
+@export var cheetah_speed: int = 550
 
 func _ready() -> void:
 	DayNightCycleManager.time_tick.connect(on_time_tick)
