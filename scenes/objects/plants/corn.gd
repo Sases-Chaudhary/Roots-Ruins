@@ -27,6 +27,7 @@ func _process(delta: float) -> void:
 	if growth_state == DataTypes.GrowthState.Maturity:
 		flowering_particles.emitting = true
 
+
 func on_hurt(hit_damage: int) -> void:
 	if !growth_cycle_component.is_watered:
 		watering_particles.emitting = true
