@@ -99,6 +99,7 @@ remove_dirt={
 2d_physics/layer_5="Objects"
 2d_physics/layer_6="Collectable"
 2d_physics/layer_7="Npc"
+2d_physics/layer_8="Water"
 
 [rendering]
 

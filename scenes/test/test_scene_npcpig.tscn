@@ -47,11 +47,11 @@ current_tools = 1
 navigation_polygon = SubResource("NavigationPolygon_l15ur")
 navigation_layers = 4
 
-[node name="Pig" parent="." instance=ExtResource("3_agjyq")]
+[node name="Pig" parent="Pigs" instance=ExtResource("3_agjyq")]
 position = Vector2(341, 143)
 
-[node name="Pig2" parent="." instance=ExtResource("3_agjyq")]
+[node name="Pig2" parent="Pigs" instance=ExtResource("3_agjyq")]
 position = Vector2(346, 177)
 
-[node name="Pig3" parent="." instance=ExtResource("3_agjyq")]
+[node name="Pig3" parent="Pigs" instance=ExtResource("3_agjyq")]
 position = Vector2(368, 131)

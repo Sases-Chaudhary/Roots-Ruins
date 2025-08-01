@@ -36,6 +36,7 @@ shape = SubResource("CircleShape2D_0ia52")
 debug_color = Color(0, 0.638895, 0.372362, 0.42)
 
 [node name="HurtComponent" parent="." instance=ExtResource("2_wjqkr")]
+tool = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent"]
 position = Vector2(-0.5, -1)

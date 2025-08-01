@@ -31,6 +31,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			add_tilled_soil_cell()
 
 func get_cell_under_mouse() -> void:
+	
 	mouse_position = grass_tilemap_layer.get_local_mouse_position()
 	cell_position = grass_tilemap_layer.local_to_map(mouse_position)
 	cell_source_id = grass_tilemap_layer.get_cell_source_id(cell_position)

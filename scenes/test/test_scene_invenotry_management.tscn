@@ -46,7 +46,6 @@ position = Vector2(367, 112)
 position = Vector2(455, 106)
 
 [node name="Corn" parent="." instance=ExtResource("8_3448r")]
-y_sort_enabled = true
 position = Vector2(205, 105)
 
 [node name="GameScreen" parent="." instance=ExtResource("9_gx2mw")]
