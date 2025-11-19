@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://cjl4gkyfgdhgs"]
+[gd_scene load_steps=14 format=4 uid="uid://cjl4gkyfgdhgs"]
 
 [ext_resource type="PackedScene" uid="uid://i7d4s1oq6r56" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="1_ihqao"]
 [ext_resource type="PackedScene" uid="uid://34nya6ltgevk" path="res://scenes/components/crops_cursor_component.tscn" id="5_3o1y6"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://2t3yw61bt3fc" path="res://scenes/components/crops_cursor_component.gd" id="6_v8lsk"]
 [ext_resource type="Resource" uid="uid://bsska3xiesqsa" path="res://resources/tilemap_layer_data_resource.tres" id="6_vfgfo"]
 [ext_resource type="PackedScene" uid="uid://dmk1iys2wuhxw" path="res://scenes/components/field_cursor_component.tscn" id="7_ihqao"]
+[ext_resource type="PackedScene" uid="uid://cqb4vs84uvutl" path="res://scenes/characters/guide/guide.tscn" id="7_vfgfo"]
 [ext_resource type="PackedScene" uid="uid://c8iyty24jsgrp" path="res://scenes/characters/player/player.tscn" id="7_y1kts"]
 [ext_resource type="Script" uid="uid://bnoi87nwyhhqj" path="res://scenes/components/field_cursor_component.gd" id="8_0v4jw"]
 [ext_resource type="PackedScene" uid="uid://d2nybjrgfbsei" path="res://scenes/ui/game_screen.tscn" id="8_d30rl"]
@@ -40,13 +41,16 @@ tile_set = ExtResource("6_bnrim")
 [node name="SaveDataComponent" parent="GameTileMap/TilledSoil" instance=ExtResource("5_vn713")]
 save_data_resource = ExtResource("6_vfgfo")
 
+[node name="Guide" parent="GameTileMap" instance=ExtResource("7_vfgfo")]
+position = Vector2(355, 165)
+
 [node name="CropFields" type="Node2D" parent="."]
 
 [node name="FieldCursorComponent" parent="." node_paths=PackedStringArray("grass_tilemap_layer", "tilled_soil_tilemap_layer") instance=ExtResource("7_ihqao")]
 script = ExtResource("8_0v4jw")
 grass_tilemap_layer = NodePath("../GameTileMap/grass")
 tilled_soil_tilemap_layer = NodePath("../GameTileMap/TilledSoil")
-terrain = 3
+terrain = 1
 
 [node name="CropsCursorComponent" parent="." node_paths=PackedStringArray("tilled_soil_tilemap_layer") instance=ExtResource("5_3o1y6")]
 script = ExtResource("6_v8lsk")

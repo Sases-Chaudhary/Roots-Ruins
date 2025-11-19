@@ -8,7 +8,7 @@ extends PanelContainer
 
 func _ready() -> void:
 	ToolManager.enable_tool.connect(on_enable_tool_button)
-	
+	pass
 	tool_tilling.disabled = true
 	tool_tilling.focus_mode = Control.FOCUS_NONE
 	
@@ -28,7 +28,7 @@ func _on_tool_axe_pressed() -> void:
 func _on_tool_tilling_pressed() -> void:
 	ToolManager.select_tool(DataTypes.Tools.TillGround)
 
-func _on_tool_watering_can_pressed() -> void:
+func _on_tool_watering_pressed() -> void:
 	ToolManager.select_tool(DataTypes.Tools.WaterCrops)
 
 func _on_tool_corn_pressed() -> void:

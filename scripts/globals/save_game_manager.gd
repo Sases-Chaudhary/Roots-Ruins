@@ -1,7 +1,7 @@
 extends Node
 
-#var allow_save_game: bool
-#
+var allow_save_game: bool
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("save_game"):
 		save_game()

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Roots & Ruins"
-run/main_scene="uid://ppykxadsfspa"
+run/main_scene="uid://o0tijmo1yqcx"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
 [autoload]
