@@ -1,23 +1,19 @@
-[gd_scene load_steps=11 format=4 uid="uid://dhrp473bgkxmj"]
+[gd_scene load_steps=9 format=4 uid="uid://dhrp473bgkxmj"]
 
 [ext_resource type="PackedScene" uid="uid://kdglb37bcf3x" path="res://scenes/components/day_night_cycle_component.tscn" id="1_17gaa"]
 [ext_resource type="PackedScene" uid="uid://i7d4s1oq6r56" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="1_av17k"]
 [ext_resource type="TileSet" uid="uid://dtkeowdms5vvw" path="res://tilesets/game_tile_set.tres" id="2_eku4r"]
-[ext_resource type="Script" uid="uid://cx20vhhmuuq44" path="res://scenes/components/test_scene_save_data_manager_component.gd" id="2_n2ev8"]
 [ext_resource type="PackedScene" uid="uid://c8iyty24jsgrp" path="res://scenes/characters/player/player.tscn" id="3_s5uu4"]
 [ext_resource type="PackedScene" uid="uid://d2nybjrgfbsei" path="res://scenes/ui/game_screen.tscn" id="4_f40v7"]
 [ext_resource type="PackedScene" uid="uid://ff6vtis4mml0" path="res://scenes/objects/plants/corn.tscn" id="5_eku4r"]
 [ext_resource type="PackedScene" uid="uid://bvbhjkqbwitjg" path="res://scenes/objects/plants/tomato.tscn" id="6_s5uu4"]
 [ext_resource type="PackedScene" uid="uid://b662ipoloj56t" path="res://scenes/components/save_level_data_component.tscn" id="7_wou7w"]
-[ext_resource type="Script" uid="uid://5md0aqsa5lgm" path="res://scenes/components/save_level_data_component.gd" id="8_5ko52"]
 
 [node name="TestSceneTilemap" type="Node2D"]
 
 [node name="TestSceneSaveDataManagerComponent" parent="." instance=ExtResource("1_av17k")]
-script = ExtResource("2_n2ev8")
 
 [node name="SaveLevelDataComponent" parent="." groups=["player"] instance=ExtResource("7_wou7w")]
-script = ExtResource("8_5ko52")
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("1_17gaa")]
 visible = false

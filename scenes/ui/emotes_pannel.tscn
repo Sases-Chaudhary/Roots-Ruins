@@ -1,0 +1,70 @@
+[gd_scene load_steps=10 format=3 uid="uid://qpuxls4h3waw"]
+
+[ext_resource type="Theme" uid="uid://73cdq4otrxso" path="res://scenes/ui/game_ui_theme.tres" id="1_03g4e"]
+[ext_resource type="Texture2D" uid="uid://dws3miree7pc6" path="res://assets/game/character/player.png" id="2_0jejw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svwf3"]
+atlas = ExtResource("2_0jejw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5n4nh"]
+atlas = ExtResource("2_0jejw")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0o7x"]
+atlas = ExtResource("2_0jejw")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcwpl"]
+atlas = ExtResource("2_0jejw")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yn8e2"]
+atlas = ExtResource("2_0jejw")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcf32"]
+atlas = ExtResource("2_0jejw")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1ns7j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svwf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5n4nh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0o7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jcwpl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yn8e2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jcf32")
+}],
+"loop": true,
+"name": &"emote_idle",
+"speed": 6.0
+}]
+
+[node name="EmotesPannel" type="Panel"]
+custom_minimum_size = Vector2(50, 50)
+theme = ExtResource("1_03g4e")
+theme_type_variation = &"DarkWoodPannel"
+
+[node name="Emote" type="Control" parent="."]
+custom_minimum_size = Vector2(40, 40)
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Emote"]
+sprite_frames = SubResource("SpriteFrames_1ns7j")
+animation = &"emote_idle"
+frame_progress = 0.682334

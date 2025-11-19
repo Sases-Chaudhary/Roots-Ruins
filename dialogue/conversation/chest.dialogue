@@ -1,0 +1,31 @@
+~ start_cow_pasture_box
+Pasture Box: [[Hi|Hello|Howdy]], your animals are hungry.
+Pasture Box: The cows have been waiting for their meal.
+Pasture Box: Would you like to feed your cows now?
+- Yes
+	Arlo: Yeah! Let's feed my cows.
+	Pasture Box: Great choice! Happy cows make better milk.
+	Pasture Box: I’ll distribute the feed for you.
+	Pasture Box: Come back later if the cows get hungry again.
+	do GameDialogueManager.action_feed_animals()
+- No
+	Arlo: No, I don't need to feed them. I have enough milk.
+	Pasture Box: Alright, but remember—unfed cows produce less milk.
+	Pasture Box: Come back anytime if you change your mind.
+=> END
+
+~ start_chicken_pasture_box
+Pasture Box: [[Hi|Hello|Howdy]], your chickens look hungry.
+Pasture Box: They’ve been scratching around waiting for their meal.
+Pasture Box: Would you like to feed your chickens now?
+- Yes
+	Arlo: Yeah! Let's feed my chickens.
+	Pasture Box: Perfect! Well-fed chickens lay better eggs.
+	Pasture Box: I’ll spread the feed for them.
+	Pasture Box: Check back later to make sure they stay healthy.
+	do GameDialogueManager.action_feed_animals()
+- No
+	Arlo: No, I don’t want to feed them right now.
+	Pasture Box: Alright. Just remember—hungry chickens lay fewer eggs.
+	Pasture Box: Come back anytime if you change your mind.
+=> END

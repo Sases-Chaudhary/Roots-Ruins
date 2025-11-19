@@ -1,0 +1,17 @@
+~ start
+Riven: [[Hi|Hello|Howdy]], nice to meet you.
+Riven: Welcome to your new farm. I’ve been looking after the place until you arrived.
+Riven: As you can see, the cows and chickens are getting hungry.
+Riven: Before you can start feeding them, you’ll need to grow some crops.
+Riven: Don’t worry, it’s easy once you learn the basics.
+Riven: These seeds should help you get started. They grow quickly and make great feed.
+Riven: Find a patch of soil you like, clear the weeds, and plant them there.
+Riven: After that, just water them each day and they’ll start sprouting soon.
+- Take crop seeds
+	Arlo: Yeah, I can grow crops. I’ll give it a try.
+	Arlo: Thanks, Riven. I’ll look for a good spot to start planting.
+	Riven: Good choice. With a little patience, your farm will be full of life.
+	do GameDialogueManager.action_give_crop_seeds()
+- No, I don't want them
+	Arlo: I'm not ready to grow my farm yet.
+=> END
