@@ -22,3 +22,11 @@ func remove_collectable(collectable_name: String) -> void:
 			inventory[collectable_name] -= 1
 
 	inventory_changed.emit()
+<<<<<<< HEAD
+=======
+
+
+func clear_inventory() -> void:
+	inventory.clear()
+	inventory_changed.emit()
+>>>>>>> 2735f0ff891a7ef288bf9da455de5881192d02f7
