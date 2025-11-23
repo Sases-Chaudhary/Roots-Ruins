@@ -29,6 +29,10 @@ func on_interactable_deactivated() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if in_range:
 		if event.is_action_pressed("show_dialogue"):
+<<<<<<< HEAD
+=======
+			print("Player pressed E and is in range of guide.")
+>>>>>>> 2735f0ff891a7ef288bf9da455de5881192d02f7
 			var balloon: BaseGameDialogueBalloon = balloon_scene.instantiate()
 			get_tree().current_scene.add_child(balloon)
 			balloon.start(load("res://dialogue/conversation/guide.dialogue"), "start")

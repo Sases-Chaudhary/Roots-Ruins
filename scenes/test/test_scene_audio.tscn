@@ -8,7 +8,10 @@
 [node name="TestSceneaudio" type="Node2D"]
 
 [node name="OnTheFarmMusic" parent="." instance=ExtResource("1_guo5b")]
+<<<<<<< HEAD
 autoplay = true
+=======
+>>>>>>> 2735f0ff891a7ef288bf9da455de5881192d02f7
 
 [node name="GameTileMap" type="Node2D" parent="."]
 
