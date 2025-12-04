@@ -1,4 +1,0 @@
-Path baking
-map 
-tilemap
-houses

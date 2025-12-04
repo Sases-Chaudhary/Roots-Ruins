@@ -14,6 +14,7 @@ func check_level_1_completion() -> void:
 	milk = InventorySimple.inventory.get("milk", 0)
 	egg = InventorySimple.inventory.get("egg", 0)
 	
-	if log >= 0 and stone >= 0 and milk >= 1 and egg >= 1:
-		InventorySimple.clear_inventory()
+	if log >= 15 and stone >= 10 and milk >= 15 and egg >= 15:
 		SceneManager.load_level("Level2")
+		await get_tree().tree_changed
+		InventorySimple.clear_inventory()

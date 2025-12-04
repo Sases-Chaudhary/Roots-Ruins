@@ -20,9 +20,8 @@ func remove_collectable(collectable_name: String) -> void:
 	else:
 		if inventory[collectable_name] > 0:
 			inventory[collectable_name] -= 1
-
+	
 	inventory_changed.emit()
-
 
 func clear_inventory() -> void:
 	inventory.clear()

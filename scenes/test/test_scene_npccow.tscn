@@ -38,9 +38,7 @@ tile_set = ExtResource("1_m7cch")
 
 [node name="Player" parent="." instance=ExtResource("2_sq67t")]
 position = Vector2(236, 202)
-
 collision_mask = 33
-
 current_tools = 1
 
 [node name="Cows" type="Node2D" parent="."]

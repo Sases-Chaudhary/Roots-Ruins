@@ -28,7 +28,6 @@ tile_set = ExtResource("1_kc2gg")
 
 [node name="Player" parent="." instance=ExtResource("2_cclx3")]
 position = Vector2(236, 202)
-collision_mask = 33
 current_tools = 1
 
 [node name="GameScreen" parent="." instance=ExtResource("3_cclx3")]

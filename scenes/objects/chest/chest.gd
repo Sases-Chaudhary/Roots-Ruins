@@ -102,3 +102,4 @@ func get_random_position_in_circle(center: Vector2, radius: int) -> Vector2i:
 	var y: int = center.y + distance_from_center * cos(angle)
 	
 	return Vector2i(x, y)
+	

@@ -24,7 +24,6 @@ tile_set = ExtResource("1_1ilvq")
 
 [node name="Player" parent="." instance=ExtResource("2_5nhwj")]
 position = Vector2(236, 202)
-collision_mask = 33
 current_tools = 1
 
 [node name="Rock" parent="." instance=ExtResource("2_km18k")]
